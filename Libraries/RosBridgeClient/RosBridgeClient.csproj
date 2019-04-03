@@ -58,11 +58,15 @@
     <Compile Include="Messages\Geometry\Point.cs" />
     <Compile Include="Messages\Geometry\PointStamped.cs" />
     <Compile Include="Messages\Geometry\Pose.cs" />
+    <Compile Include="Messages\Geometry\Pose2D.cs" />
     <Compile Include="Messages\Geometry\PoseStamped.cs" />
     <Compile Include="Messages\Geometry\PoseWithCovariance.cs" />
     <Compile Include="Messages\Geometry\Quaternion.cs" />
+    <Compile Include="Messages\Geometry\Transform.cs" />
+    <Compile Include="Messages\Geometry\TransformStamped.cs" />
     <Compile Include="Messages\Geometry\Twist.cs" />
     <Compile Include="Messages\Geometry\TwistWithCovariance.cs" />
+    <Compile Include="Messages\Geometry\Vector2D.cs" />
     <Compile Include="Messages\Geometry\Vector3.cs" />
     <Compile Include="Messages\Actionlib\GoalID.cs" />
     <Compile Include="Messages\Actionlib\GoalStatus.cs" />
