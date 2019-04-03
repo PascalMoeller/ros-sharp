@@ -45,7 +45,7 @@ namespace RosSharp.RosBridgeClient
 
         private void Update()
         {
-            Pose2DToPose2D(message, data);
+            CustomRosConverter.Pose2DToPose2D(message, data);
             Publish(message);
         }
 
@@ -78,19 +78,6 @@ namespace RosSharp.RosBridgeClient
             \*=================*/
 
             private void InitializeMessage() { message = new Geometry.Pose2D(); }
-
-            /*=================*\
-            |*   Conversions   *|
-            \*=================*/
-
-            private void Pose2DToPose2D(Geometry.Pose2D dataOut, Pose2D dataIn)
-            {
-                // Set fields
-                // ----------
-                dataOut.x       =  dataIn.z;
-                dataOut.y       = -dataIn.x;
-                dataOut.theta   =  dataIn.theta;
-            }
     }
 }
 
@@ -101,7 +88,7 @@ namespace RosSharp.RosBridgeClient
 [Serializable]
 public class Pose2D 
 {
-    public float z;
-    public float x;
-    public float theta;
+    public double z;
+    public double x;
+    public double theta;
 }
