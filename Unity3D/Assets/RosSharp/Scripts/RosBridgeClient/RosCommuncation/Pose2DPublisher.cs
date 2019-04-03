@@ -13,6 +13,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+/*===================*\
+|*   System Usings   *|
+\*===================*/
+
+using System;
+
 /*================*\
 |*   ROS Usings   *|
 \*================*/
@@ -92,6 +98,7 @@ namespace RosSharp.RosBridgeClient
 |*   CLASS: Pose2D   *|
 \*===================*/
 
+[Serializable]
 public class Pose2D 
 {
     public float z;
